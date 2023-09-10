@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { CarouselComponent } from './carousel/carousel.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { FooterComponent } from './footer/footer.component';
+import { AboutUsComponent } from './home/about-us/about-us.component';
+import { CarouselComponent } from './home/carousel/carousel.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
+import { ProductComponent } from './product/product.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { FooterComponent } from './footer/footer.component';
     NavBarComponent,
     CarouselComponent,
     AboutUsComponent,
-    FooterComponent
+    FooterComponent,
+    ProductComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
